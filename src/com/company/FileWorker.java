@@ -2,6 +2,7 @@ package com.company;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class FileWorker {
@@ -17,7 +18,9 @@ public class FileWorker {
         String line = reader.readLine();
         while (line != null) {
             System.out.println(line);
+            String str[] = line.split(" ");
             // считываем остальные строки в цикле
+            System.out.println(Arrays.toString(str) + " array");
             line = reader.readLine();
         }
     }
