@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         File lab1File = new File("D:\\NULP\\DiscretMoelLabs\\Lab1Prym\\lab1.txt");
         FileWorker fileWorker = new FileWorker();
-        fileWorker.FileWorker();
+        fileWorker.FileWorkerMethod();
 
        //метод зчитування файлу таке саме в класі файлВоркер
        /* try {
