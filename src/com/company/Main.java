@@ -5,9 +5,11 @@ import java.io.*;
 public class Main {
     // построчное считывание файла
     public static void main(String[] args) throws IOException {
-        File lab1File = new File("D:\\NULP\\DiscretMoelLabs\\Lab1Prym\\lab1.txt");
+       // File lab1File = new File("D:\\NULP\\DiscretMoelLabs\\Lab1Prym\\lab1.txt");
         FileWorker fileWorker = new FileWorker();
         fileWorker.FileWorkerMethod();
+
+
 
        //метод зчитування файлу таке саме в класі файлВоркер
        /* try {
@@ -29,7 +31,5 @@ public class Main {
             e.printStackTrace();
         }*/
         //кінець методі зчитування файлу
-
-
     }
 }
