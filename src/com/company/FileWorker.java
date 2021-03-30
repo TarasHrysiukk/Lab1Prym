@@ -1,11 +1,14 @@
 package com.company;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FileWorker {
 
-    File lab1File = new File("D:\\NULP\\DiscretMoelLabs\\Lab1Prym\\lab1.txt");
+    File lab1File = new File("lab1.txt");
     public void FileWorkerMethod() throws IOException {
+      ///  List<String> listNumb = new ArrayList<>();
         //создаем объект FileReader для объекта File
         FileReader fr = new FileReader(lab1File);
         //создаем BufferedReader с существующего FileReader для построчного считывания
@@ -17,6 +20,5 @@ public class FileWorker {
             // считываем остальные строки в цикле
             line = reader.readLine();
         }
-
     }
 }
