@@ -5,8 +5,9 @@ import java.io.*;
 public class Main {
     // построчное считывание файла
     public static void main(String[] args) throws IOException {
-       // File lab1File = new File("D:\\NULP\\DiscretMoelLabs\\Lab1Prym\\lab1.txt");
         FileWorker fileWorker = new FileWorker();
+        //PrymTest prymTest = new PrymTest();
+       //System.out.println(prymTest.mstPrim());
         fileWorker.FileWorkerMethod();
 
 
