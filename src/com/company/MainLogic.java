@@ -10,6 +10,7 @@ public class MainLogic  {
     private List<String> listStringFile;
 
     public MainLogic() {
+
         this.listStringFile = new ArrayList<String>();
     }
     private List<String> readStringsFromFile(String nameFile) {
@@ -20,7 +21,6 @@ public class MainLogic  {
             while ((line = reader.readLine()) != null) {
                 listStringFile.add(line);
             }
-
             reader.close();
         } catch (IOException e) {
             System.out.println("Невозможно считать с файла!");
@@ -38,7 +38,7 @@ public class MainLogic  {
 
         int[][] twoDimensionArrayNumbers = new int[countRows][countColumns];
 
-        for (int counterRow = 22; counterRow < listStringsFile.size(); counterRow++) {
+        for (int counterRow = 0; counterRow < listStringsFile.size(); counterRow++) {
             String[] arrayStringNumbers = listStringsFile.get(counterRow).split(" ");
             for (int counterColumn = 0; counterColumn < countColumns; counterColumn++) {
                 if (isNumeric(arrayStringNumbers[counterColumn])) {
@@ -49,7 +49,6 @@ public class MainLogic  {
             }
         }
         return twoDimensionArrayNumbers;
-
     }
 
     public static boolean isNumeric(String string) {
@@ -59,7 +58,7 @@ public class MainLogic  {
     public static void main(String[] args) {
         MainLogic mainLogic = new MainLogic();
 
-        List<String> listStringsFile = mainLogic.readStringsFromFile("D:\\NULP\\DiscretMoelLabs\\Lab1Prym\\lab1.txt");
+        List<String> listStringsFile = mainLogic.readStringsFromFile("lab1.txt");
 
         /**/
         for (String lineFile : listStringsFile) {
